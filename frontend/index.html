@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Weather</h1>
+
+    <form id="search-form">
+      <input
+        id="city-input"
+        type="text"
+        placeholder="Enter a city, e.g. Islamabad"
+        autocomplete="off"
+        required>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message" class="message" hidden></p>
+
+    <section id="result" class="card" hidden>
+      <h2 id="result-city"></h2>
+      <div class="grid">
+        <div class="tile">
+          <span class="label">Temperature</span>
+          <span class="value" id="result-temp"></span>
+        </div>
+        <div class="tile">
+          <span class="label">Feels like</span>
+          <span class="value" id="result-feels-like"></span>
+        </div>
+        <div class="tile">
+          <span class="label">Condition</span>
+          <span class="value" id="result-condition"></span>
+        </div>
+        <div class="tile">
+          <span class="label">Humidity</span>
+          <span class="value" id="result-humidity"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

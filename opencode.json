@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "weather": {
+      "type": "local",
+      "command": [
+        "C:\\shaiza kiani\\mcp understanding\\.venv\\Scripts\\python.exe",
+        "C:\\shaiza kiani\\mcp understanding\\mcp_server.py"
+      ],
+      "cwd": "C:\\shaiza kiani\\mcp understanding",
+      "timeout": 30000,
+      "enabled": true
+    }
+  }
+}
